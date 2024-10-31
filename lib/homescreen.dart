@@ -63,49 +63,66 @@ class _HomeScreenState extends State<HomeScreen>
       body: Center(
         child: GestureDetector(
           onTap: _navigateToMainScreen,
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: 280,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Positioned(
-                      bottom: 20,
-                      child: Image.asset(
-                        'assets/image/shadow.png',
-                        width: 130,
-                        height: 130,
-                      ),
-                    ),
-                    AnimatedBuilder(
-                      animation: _iconAnimation,
-                      builder: (context, child) {
-                        return Transform.translate(
-                          offset: Offset(0, _iconAnimation.value),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 280,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Positioned(
+                          bottom: 20,
                           child: Image.asset(
-                            'assets/image/pinpoint.png',
-                            width: 150,
-                            height: 150,
+                            'assets/image/shadow.png',
+                            width: 130,
+                            height: 130,
                           ),
-                        );
-                      },
+                        ),
+                        AnimatedBuilder(
+                          animation: _iconAnimation,
+                          builder: (context, child) {
+                            return Transform.translate(
+                              offset: Offset(0, _iconAnimation.value),
+                              child: Image.asset(
+                                'assets/image/pinpoint.png',
+                                width: 150,
+                                height: 150,
+                              ),
+                            );
+                          },
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(width: 5),
+                  const Text(
+                    'GabayEARIST',
+                    style: TextStyle(
+                      fontFamily: 'Arquitectura',
+                      fontSize: 80,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(width: 5),
-              const Text(
-                'GabayEARIST',
-                style: TextStyle(
-                  fontFamily: 'Arquitectura',
-                  fontSize: 80,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                ),
-              ),
+              const SizedBox(height: 12), // Space between the text and button
+          ElevatedButton(
+  onPressed: _navigateToMainScreen,
+  style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.white, // Background color of the button
+    foregroundColor: Colors.black, // Text color
+    padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12), // Button padding
+    textStyle: const TextStyle(fontSize: 25), // Text style
+  ),
+  child: const Text('Get Started'), // Button text
+),
+
             ],
           ),
         ),

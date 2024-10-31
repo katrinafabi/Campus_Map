@@ -17,7 +17,6 @@ class _MainScreenState extends State<MainScreen> {
   bool _isBathroomChecked = false;
   bool _isCafeteriaChecked = false;
   bool _isGymnasiumChecked = false;
-  bool _isLocationNearMe = false;
   bool _isLibraryChecked = false;
   bool _isFacultyChecked = false;
   bool _isLaboratoryChecked = false;
@@ -268,25 +267,7 @@ class _MainScreenState extends State<MainScreen> {
                             fontWeight: FontWeight.bold, color: Colors.black),
                       ),
                     ),
-                    ListTile(
-                      leading:
-                          const Icon(Icons.location_on, color: Colors.black),
-                      title: const Text('Locations Near Me',
-                          style: _filterTextStyle),
-                      trailing: Switch(
-                        value: _isLocationNearMe,
-                        onChanged: (bool value) {
-                          setState(() {
-                            _isLocationNearMe = value;
-                          });
-                        },
-                      ),
-                      onTap: () {
-                        setState(() {
-                          _isLocationNearMe = !_isLocationNearMe;
-                        });
-                      },
-                    ),
+                   
                     _buildListTile(
                       'Parking',
                       Icons.local_parking,

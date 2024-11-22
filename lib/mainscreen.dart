@@ -1,3 +1,5 @@
+import 'package:campus_map/admininfo.dart';
+import 'package:campus_map/mapscreen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -17,7 +19,6 @@ class _MainScreenState extends State<MainScreen> {
   bool _isBathroomChecked = false;
   bool _isCafeteriaChecked = false;
   bool _isGymnasiumChecked = false;
-  bool _isLocationNearMe = false;
   bool _isLibraryChecked = false;
   bool _isFacultyChecked = false;
   bool _isLaboratoryChecked = false;
@@ -157,7 +158,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
           ),
           // Zoom buttons in the bottom right corner
-         
+
           AnimatedPositioned(
             duration: const Duration(milliseconds: 300),
             left: _isMenuExpanded ? 0 : -300,
@@ -245,11 +246,28 @@ class _MainScreenState extends State<MainScreen> {
                         ],
                       ),
                     ),
+                  
+                    ListTile(
+                      leading: const Icon(Icons.admin_panel_settings,
+                          color: Colors.black),
+                      title: const Text('Admin Info', style: _filterTextStyle),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AdminInfoScreen()),
+                        );
+                      },
+                    ),
                     ListTile(
                       leading: const Icon(Icons.map, color: Colors.black),
                       title: const Text('Map', style: _filterTextStyle),
                       onTap: () {
-                        // Handle Map tap
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MapScreen()),
+                        );
                       },
                     ),
                     ListTile(
@@ -267,25 +285,6 @@ class _MainScreenState extends State<MainScreen> {
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.black),
                       ),
-                    ),
-                    ListTile(
-                      leading:
-                          const Icon(Icons.location_on, color: Colors.black),
-                      title: const Text('Locations Near Me',
-                          style: _filterTextStyle),
-                      trailing: Switch(
-                        value: _isLocationNearMe,
-                        onChanged: (bool value) {
-                          setState(() {
-                            _isLocationNearMe = value;
-                          });
-                        },
-                      ),
-                      onTap: () {
-                        setState(() {
-                          _isLocationNearMe = !_isLocationNearMe;
-                        });
-                      },
                     ),
                     _buildListTile(
                       'Parking',

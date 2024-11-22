@@ -16,6 +16,7 @@ dependencies:
   font_awesome_flutter: ^10.3.0 
   cupertino_icons: ^1.0.8
   flutter_map: ^7.0.2
+  latlong2: ^0.9.1
   
 dev_dependencies:
   flutter_test:
@@ -28,6 +29,12 @@ flutter:
     - assets/image/pinpoint.png
     - assets/image/shadow.png
     - assets/image/MAP.png
+    - assets/image/MISFL1.png
+    - assets/image/MISFL2.png
+    - assets/image/MISFL3.png
+    - assets/image/MISFL4.png
+    - assets/image/MISFL5.png
+    
   fonts:
     - family: Arquitectura
       fonts:

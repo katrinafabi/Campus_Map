@@ -17,7 +17,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_map: ^7.0.2
   latlong2: ^0.9.1
+  flutter_pdfview: ^1.3.4
+  syncfusion_flutter_pdfviewer: ^28.1.35
   
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -34,6 +37,13 @@ flutter:
     - assets/image/MISFL3.png
     - assets/image/MISFL4.png
     - assets/image/MISFL5.png
+    - assets/svg/1.svg
+    - assets/svg/2.svg
+    - assets/svg/3.svg
+    - assets/svg/4.svg
+    - assets/svg/5.svg
+    - assets/svg/6.svg
+ 
     
   fonts:
     - family: Arquitectura

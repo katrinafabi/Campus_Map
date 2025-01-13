@@ -124,13 +124,9 @@ List<Offset> cafeteriaIconPositions = [
 List<Offset> allIconPositions = [
   Offset(260, 395), // ParkingLot#1
   Offset(351, 571), //class2
-  Offset(363, 648),
-
-  ///class3
+  Offset(363, 648), //class3
   Offset(375, 725), //class4
-  Offset(388, 789),
-
-  ///class5
+  Offset(388, 789),//class5
   Offset(291, 815), //class6
   Offset(-79, 556), //class7
   Offset(-81, 664), //class8
@@ -185,7 +181,14 @@ List<Offset> allIconPositions = [
   Offset(605, 650), //store56
   Offset(494, 550), //store56
 ];
+List<String> roomNames = [
+  'Parking Lot',
+  'CAFA Room 101',
+  'CAFA Room 102',
+  'CAFA Room 103',
+  'CAFA Room 103',
 
+];
 List<IconData> classroomIconList = [
   Icons.class_,
   Icons.class_,
@@ -276,7 +279,6 @@ List<IconData> libraryIconList = [];
 List<IconData> cafeteriaIconList = [
   Icons.fastfood,
 ];
-
 List<IconData> allIconList = [
   Icons.local_parking,
   Icons.class_,
@@ -336,4 +338,3 @@ List<IconData> allIconList = [
   Icons.store,
   Icons.store,
 ];
-

@@ -107,21 +107,14 @@ class _HomeScreenState extends State<HomeScreen>
               ),
             ),
             const Text(
-              'Smart Campus Navigation and ',
+              'Campus Guide for Freshmen',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
               ),
               textAlign: TextAlign.center,
             ),
-            const Text(
-              'Wayfinding System for Freshmen',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-              ),
-              textAlign: TextAlign.center,
-            ),
+
             const SizedBox(height: 50),
             if (!_showGetStartedButton) ...[
               // Smooth Progress Bar

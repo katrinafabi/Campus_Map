@@ -37,12 +37,15 @@ flutter:
     - assets/image/MISFL3.png
     - assets/image/MISFL4.png
     - assets/image/MISFL5.png
+    - assets/image/ccs.png
+    - assets/image/ced.png
     - assets/svg/1.svg
     - assets/svg/2.svg
     - assets/svg/3.svg
     - assets/svg/4.svg
     - assets/svg/5.svg
     - assets/svg/6.svg
+    
  
     
   fonts:

@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 import 'package:campus_map/icon_util.dart';
 import 'dart:math';
 import 'package:campus_map/floor1.dart';
+import 'package:campus_map/helpscreen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -143,7 +144,7 @@ class _MainScreenState extends State<MainScreen> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('$roomName'),
+          title: Text(roomName),
           actions: <Widget>[
             TextButton(
               onPressed: () {
@@ -445,7 +446,11 @@ class _MainScreenState extends State<MainScreen> {
                       leading: const Icon(Icons.help, color: Colors.black),
                       title: const Text('Help', style: _filterTextStyle),
                       onTap: () {
-                        // Handle Help tap
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HelpScreen()),
+                        );
                       },
                     ),
                     const Padding(
@@ -513,7 +518,7 @@ class _MainScreenState extends State<MainScreen> {
                       },
                     ),
                     _buildListTile(
-                      'Bathroom',
+                      'CR',
                       Icons.wc,
                       _isBathroomChecked,
                       (bool? value) {

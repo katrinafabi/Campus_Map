@@ -94,8 +94,9 @@ List<Offset> officeIconPositions = [
   Offset(1025, 700), //work25
   Offset(857, 460), //work27
   Offset(521, 789), //work41
-  Offset(905, 135), //attachmoney21
-  Offset(923, 226), //attachmoney22
+  Offset(905, 134), //attachmoney21
+  Offset(923, 225), //attachmoney22
+  Offset(224, 531), //clinic
 ];
 List<Offset> storeIconPositions = [
   Offset(605, 710), //store39
@@ -122,6 +123,8 @@ List<Offset> cafeteriaIconPositions = [
   Offset(547, 550), //fastfood37
 ];
 List<Offset> allIconPositions = [
+  Offset(-48, 770),//elevator
+  Offset(224, 531),//clinic
   Offset(260, 395), // ParkingLot#1
   Offset(351, 571), //class2
   Offset(363, 648), //class3
@@ -143,8 +146,8 @@ List<Offset> allIconPositions = [
   Offset(707, 51), //class19
   Offset(745, 36), //class20
   Offset(778, 21), //class21
-  Offset(905, 135), //attachmoney21
-  Offset(923, 226), //attachmoney22
+  Offset(905, 134), //attachmoney21
+  Offset(923, 225), //attachmoney22
   Offset(951, 329), //work23
   Offset(992, 581), //work24
   Offset(1025, 700), //work25
@@ -180,16 +183,72 @@ List<Offset> allIconPositions = [
   Offset(605, 680), //store55
   Offset(605, 650), //store56
   Offset(494, 550), //store56
+  
 ];
 List<String> roomNames = [
+  'Elevator',
+  'Clinic',
   'Parking Lot',
   'CAFA Room 101',
   'CAFA Room 102',
   'CAFA Room 103',
-  'CAFA Room 103',
-
+  'CAFA Room 104',
+  'CAFA Room 105',
+  'CIT Room 101',
+  'CIT Room 102',
+  'CIT Room 103',
+  'CIT Room 104',
+  'CIT Room 105',
+  'Faculty Room',
+  'Civil Engineering Laboratory',
+  'Mechanial Laboratory',
+  'Faculty Room',
+  'CAFA Quadrangle',
+  'EARIST Museum',
+  'Room',
+  'Room',
+  'Room',
+  'Room',
+  'Financial Management Services',
+  'Cashier Office',
+  'DRRMC Office',
+  'Student Center',
+  'Student Services',
+  'EARIST Highschool Building',
+  'Business Management Center',
+  'Faculty Room (CHTM)',
+  'Office of the Dean (CHTM)',
+  'Room 104',
+  'Room 103',
+  'Room 102',
+  'Room 101',
+  'Bathroom',
+  'CHTM Lab',
+  'EARIST Highschool Building',
+  'Canteen',
+  'Faculty Room',
+  'IGP Uniform Shop',
+  'CR',
+  'IGP Office',
+  'Parking Lot',
+  'Main Quadrangle',
+  'Alumni Building',
+  'Wheelchair Ramp',
+  'CR(Female)',
+  'CR(Male)',
+  'CR(Female)',
+  'CR(Male)',
+  'CR(Female)',
+  'Valencia Street',
+  'Nagtahan Street',
+  'Ruiloba Street',
+  'IGP Campus Bookstore',
+  'Food Stall',
+  'Food Stall',
+  'Food Stall',
 ];
 List<IconData> classroomIconList = [
+  
   Icons.class_,
   Icons.class_,
   Icons.class_,
@@ -252,6 +311,7 @@ List<IconData> officeIconList = [
   Icons.work,
   Icons.work,
   Icons.work,
+  Icons.local_hospital,
 ];
 List<IconData> storeIconList = [
   Icons.store,
@@ -280,6 +340,8 @@ List<IconData> cafeteriaIconList = [
   Icons.fastfood,
 ];
 List<IconData> allIconList = [
+  Icons.elevator,
+  Icons.local_hospital,
   Icons.local_parking,
   Icons.class_,
   Icons.class_,
@@ -301,8 +363,8 @@ List<IconData> allIconList = [
   Icons.class_,
   Icons.class_,
   Icons.class_,
-  Icons.attach_money,
-  Icons.attach_money,
+  Icons.work,
+  Icons.work,
   Icons.work,
   Icons.work,
   Icons.work,
@@ -337,4 +399,5 @@ List<IconData> allIconList = [
   Icons.store,
   Icons.store,
   Icons.store,
+  
 ];

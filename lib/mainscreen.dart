@@ -139,12 +139,12 @@ class _MainScreenState extends State<MainScreen> {
     _updateIconList();
   }
 
-  void _showRoomNameDialog(String roomName) {
+  void _showRoomNameDialog(String roomNames) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(roomName),
+          title: Text(roomNames),
           actions: <Widget>[
             TextButton(
               onPressed: () {

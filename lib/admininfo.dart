@@ -98,6 +98,10 @@ class AdminInfoScreen extends StatelessWidget {
                 'name': 'Prof. Edgrado R. Sison, MIT',
                 'position': 'Instructor I',
               },
+               {
+                'name': 'Prof. Arlene P. Evangelista',
+                'position': 'Instructor I',
+              },
               {
                 'name': 'Prof. Melody L. Gabas',
                 'position': 'Instructor I',

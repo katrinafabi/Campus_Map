@@ -52,7 +52,7 @@ List<Offset> computerlaboratoryIconPositions = [
 ];
 List<Offset> officeIconPositions = [
   //6
-  Offset(225, 507), //13researchroom
+ 
 ];
 List<Offset> wheelchairIconPositions = [
   //7
@@ -70,12 +70,12 @@ List<IconData> classroomIconList = [
   Icons.class_, //11room404
   Icons.class_, //12room405
   Icons.class_, //15room510
-  Icons.class_, //16room411
+  
 ];
 List<IconData> bathroomIconList = [
   //2
   Icons.male, //1wcm
-  Icons.female, //2wcf
+  Icons.female, //16room411
 ];
 List<IconData> facultyIconList = [
   //3
@@ -88,7 +88,7 @@ List<IconData> laboratoryIconList = [
 List<IconData> computerlaboratoryIconList = []; //5
 List<IconData> officeIconList = [
   //6
-  Icons.work, //13researchroom
+ 
 ];
 List<IconData> wheelchairIconList = [
   //7
@@ -110,7 +110,6 @@ List<Offset> allIconPositions = [
   Offset(363, 494), //2wcf
   Offset(278, 500), //14DEANCCE
   Offset(170, 577), //9phylab
-  Offset(225, 507), //13researchroom
   Offset(700, 148), //17
 ];
 
@@ -125,11 +124,10 @@ List<IconData> allIconList = [
   Icons.class_, //11room404
   Icons.class_, //12room405
   Icons.class_, //15room510
-  Icons.class_, //16room411 
+  Icons.female, //16room411 
   Icons.male, //1wcm
-  Icons.female, //2wcf
+  Icons.class_, //2wcf
   Icons.people, //14deancce
-  Icons.science, //9room402
-  Icons.work,//13researchroom
+  Icons.wheelchair_pickup, //9room402
   Icons.wheelchair_pickup,//17  
 ];
